@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .button{
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 4px;
+            background-color: rgb(73, 73, 73);
+            border: solid;
+            color: white;
+            border-radius: 3px;
+            height: 30px;
+            width: 30px;
+            transition: background-color 0.25s;           
+        }
+        .button label {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+        }
+        .button:hover{
+            background-color: black;
+        }
+        #buttons{
+            text-align: center;
+        }
+        #header{
+            font-family: monospace;
+            text-align: center;
+            color: rgb(73, 73, 73);
+        }
+        #turn{
+            font-family: monospace;
+            font-size: 8px;
+            text-align: center;
+            display: block;
+        }
+        .resetButton{
+            background-color: rgb(73, 73, 73);
+            border: none;
+            color: white;
+            border-radius: 30px;
+            transition: background-color 0.25s;
+            cursor: pointer;
+        }
+        .resetButton:hover{
+            background-color: black;
+        }
+        .resetButton:active{
+            background-color: rgb(0, 100, 0);
+        }
+
+    </style>
+
+    <h3 id="header">Tic Tac Toe</h3>
+
+    <div id="buttons">
+        <button id="oneButton" class="button"><label id="oneChanger"></label></button>
+        <button id="twoButton" class="button"><label id="twoChanger"></label></button>
+        <button id="threeButton" class="button"><label id="threeChanger"></label></button><br>
+        <button id="fourButton" class="button"><label id="fourChanger"></label></button>
+        <button id="fiveButton" class="button"><label id="fiveChanger"></label></button>
+        <button id="sixButton" class="button"><label id="sixChanger"></label></button><br>
+        <button id="sevenButton" class="button"><label id="sevenChanger"></label></button>
+        <button id="eightButton" class="button"><label id="eightChanger"></label></button>
+        <button id="nineButton" class="button"><label id="nineChanger"></label></button><br>
+        <button onclick="reset()" class="resetButton">Reset</button>
+    </div>
+    
+
+    <script>
+       const oneButton = document.getElementById('oneButton');
+       const twoButton = document.getElementById('twoButton');
+       const threeButton = document.getElementById('threeButton');
+       const fourButton = document.getElementById('fourButton');
+       const fiveButton = document.getElementById('fiveButton');
+       const sixButton = document.getElementById('sixButton');
+       const sevenButton = document.getElementById('sevenButton');
+       const eightButton = document.getElementById('eightButton');
+       const nineButton = document.getElementById('nineButton');
+       
+       let count = 0;
+
+        oneButton.onclick = function(){
+            if(count % 2 === 0){
+                oneChanger.textContent = "X";
+            }else{
+                oneChanger.textContent = "O";
+            }
+           count++; 
+        }
+        twoButton.onclick = function(){
+            if(count % 2 === 0){
+                twoChanger.textContent = "X";
+            }else{
+                twoChanger.textContent = "O";
+            }
+           count++; 
+        }
+        threeButton.onclick = function(){
+            if(count % 2 === 0){
+                threeChanger.textContent = "X";
+            }else{
+                threeChanger.textContent = "O";
+            }
+           count++; 
+        }
+        fourButton.onclick = function(){
+            if(count % 2 === 0){
+                fourChanger.textContent = "X";
+            }else{
+                fourChanger.textContent = "O";
+            }
+           count++; 
+        }
+        fiveButton.onclick = function(){
+            if(count % 2 === 0){
+                fiveChanger.textContent = "X";
+            }else{
+                fiveChanger.textContent = "O";
+            }
+           count++; 
+        }
+        sixButton.onclick = function(){
+            if(count % 2 === 0){
+                sixChanger.textContent = "X";
+            }else{
+                sixChanger.textContent = "O";
+            }
+           count++; 
+        }
+        sevenButton.onclick = function(){
+            if(count % 2 === 0){
+                sevenChanger.textContent = "X";
+            }else{
+                sevenChanger.textContent = "O";
+            }
+           count++; 
+        }
+        eightButton.onclick = function(){
+            if(count % 2 === 0){
+                eightChanger.textContent = "X";
+            }else{
+                eightChanger.textContent = "O";
+            }
+           count++; 
+        }
+        nineButton.onclick = function(){
+            if(count % 2 === 0){
+                nineChanger.textContent = "X";
+            }else{
+                nineChanger.textContent = "O";
+            }
+           count++; 
+        }
+        
+        function reset(){
+            return location.reload();
+        }
+
+    </script>
+</body>
+</html>
