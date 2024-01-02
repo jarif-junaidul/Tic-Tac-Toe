@@ -1,1 +1,1 @@
-# Tic-Tac-Toe
+Download the .html file, double click it, and enjoy.
